@@ -1,0 +1,97 @@
+.doctors {
+  background-image: url(../img/svg/Ellipse2.svg);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  margin-bottom: 150px;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 50px;
+    background-size: 50%;
+    //background-image: none;
+  }
+
+  @media (max-width: $tablet-width) {
+    background-image: none;
+    margin-bottom: 20px;
+  }
+}
+
+.doctors__container {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column-reverse;
+  }
+}
+
+.doctors__content {
+  flex-basis: 50%;
+  padding-right: 104px;
+
+  @media (max-width: $desktop-width) {
+    padding-right: 10px;
+  }
+
+  @media (max-width: $tablet-width) {
+    flex-basis: 100%;
+  }
+}
+
+.doctors__slogan,
+.doctors__title {
+  text-align: start;
+  letter-spacing: 0.015em;
+}
+.doctors__title {
+  margin-top: 10px;
+  margin-bottom: 26px;
+}
+
+.doctors__tetx {
+  margin-bottom: 30px;
+}
+
+.doctors__button {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 17px 43px;
+  margin-top: 16px;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+    width: 100%;
+  }
+}
+
+.doctors__card {
+  position: absolute;
+  left: 679px;
+  top: 37px;
+
+  @media (max-width: $desktop-width) {
+    left: 45%;
+    top: 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    left: 0;
+    bottom: 70%;
+  }
+}
+
+.doctors__img img {
+  @media (max-width: $desktop-width) {
+    margin-left: 90px;
+    Width: 80%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+  }
+}

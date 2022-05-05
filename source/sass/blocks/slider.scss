@@ -1,0 +1,159 @@
+.slider {
+  margin-bottom: 205px;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.slider__title {
+  margin-bottom: 10px;
+  letter-spacing: 0.02em;
+}
+
+.slider__wrapper {
+  min-height: 500px;
+
+  @media (max-width: $desktop-width) {
+    min-height: 300px;
+  }
+}
+
+.slider__slogan {
+  color: $grey;
+  margin-bottom: 50px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.slider__slide {
+  background-color: $greylight;
+  position: relative;
+  min-height: 350px;
+
+  @media (max-width: $tablet-width) {
+    min-height: 550px;
+  }
+}
+
+.slider__img {
+  position: absolute;
+  top: 80px;
+  z-index: 100;
+
+  @media (max-width: $desktop-width) {
+    top: 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    position: static;
+  }
+
+}
+
+.slider__img img {
+  @media (max-width: $desktop-width) {
+    width: 70%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.slider__text {
+  font-size: 25px;
+  line-height: 40px;
+  letter-spacing: 0.03em;
+  margin: 100px 85px 90px 630px;
+
+  @media (max-width: $desktop-width) {
+    margin: 0;
+    margin-left: auto;
+    padding-top: 20px;
+    padding-right: 10px;
+    width: 50%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    font-size: 18px;
+    line-height: 25px;
+    padding-left: 10px;
+    text-align: center;
+  }
+}
+
+.slider__author {
+  position: absolute;
+  left: 630px;
+  bottom: -93px;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 0.03em;
+
+  @media (max-width: $desktop-width) {
+    margin-top: 20px;
+    margin-right: 10px;
+    position: static;
+    align-items: flex-end;
+    align-content: flex-end;
+    flex-basis: content;
+  }
+}
+
+.slider__patient {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.slider__profession {
+  line-height: 14px;
+  color: $grey;
+}
+
+.slider__button {
+  &--next {
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/svg/slider-button.svg");
+      background-repeat: no-repeat;
+      width: 40px;
+      height: 20px;
+      bottom: -170px;
+      right: -12px;
+    }
+  }
+
+  &--prev {
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/svg/slider-button.svg");
+      background-repeat: no-repeat;
+      width: 40px;
+      height: 20px;
+      transform: rotate(180deg);
+      bottom: -168px;
+      left: 1130px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}

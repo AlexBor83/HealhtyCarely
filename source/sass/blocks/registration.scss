@@ -1,0 +1,76 @@
+.registration__container {
+  display: flex;
+  margin-bottom: 150px;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+}
+
+.registration__content {
+  flex-basis: 45%;
+  padding-left: 63px;
+  padding-right: 50px;
+
+  @media (max-width: $desktop-width) {
+    padding-right: 10px;
+    padding-left: 10px;
+    flex-basis: 60%;
+  }
+
+  @media (max-width: $tablet-width) {
+    flex-basis: 100%;
+  }
+
+
+}
+
+.registration__slogan,
+.registration__title {
+  text-align: start;
+  letter-spacing: 0.025em;
+}
+
+.registration__slogan{
+  margin-bottom: 10px;
+}
+
+.registration__title {
+  margin-bottom: 26px;
+}
+
+.registration__text {
+  margin-bottom: 27px;
+}
+
+.registration__button {
+  display: inline-block;
+  margin-top: 18px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 18px 43px;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+    width: 100%;
+  }
+}
+
+.registration__img img {
+  @media (max-width: $desktop-width) {
+    display: block;
+    width: 80%;
+    height: 80%;
+  }
+
+  @media (max-width: $tablet-width) {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+}

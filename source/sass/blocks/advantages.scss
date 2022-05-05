@@ -1,0 +1,33 @@
+.advantages {
+  margin-bottom: 180px;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 100px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.advantages__slogan {
+  margin-bottom: 10px;
+  letter-spacing: 0.02em;
+}
+
+.advantages__title {
+  margin-bottom: 51px;
+  letter-spacing: 0.02em;
+}
+
+.advantages__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding-left: 0;
+  margin: 0;
+
+  @media (max-width: $desktop-width) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

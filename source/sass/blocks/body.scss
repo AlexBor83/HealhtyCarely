@@ -1,0 +1,17 @@
+body {
+  font-family: $font-family--manrope;
+  color: $black;
+  font-weight: 400;
+  font-size:  14px;
+  line-height: 20px;
+  min-height: 100vh;
+  min-width: 320px;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  overflow-x: hidden;
+}
+
+// .body__fixed-page {
+//   overflow: hidden;
+// }

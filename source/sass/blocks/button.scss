@@ -1,0 +1,12 @@
+.button {
+  padding: 12px 22px;
+  background-color: $blue;
+  border-radius: 10px;
+  color: $wight;
+  text-align: center;
+
+  &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+}

@@ -1,0 +1,33 @@
+.advantage {
+  box-shadow: 10px 10px 34px rgba(199, 201, 217, 0.5);
+  border-top: 3px solid $blue;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 50px 55px 10px 40px;
+  min-height: 228px;
+
+  @media (max-width: $tablet-width) {
+    padding: 20px 20px 10px 20px;
+  }
+}
+
+.advantage__svg {
+  margin-bottom: 10px;
+}
+
+.advantage__title {
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.advantage__text {
+  color: $grey;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
